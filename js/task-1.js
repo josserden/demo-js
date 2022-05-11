@@ -7,3 +7,6 @@
 
 const apples = 47;
 const grapes = 135;
+const sum = apples + grapes;
+
+console.log(sum);

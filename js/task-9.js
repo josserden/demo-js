@@ -6,4 +6,20 @@
 const incomingValue = false;
 const defaultValue = 10;
 
-// let value;
+let value = incomingValue ?? defaultValue;
+
+if (incomingValue === undefined) {
+  value = defaultValue;
+} else if (incomingValue === null) {
+  value = defaultValue;
+} else {
+  value = incomingValue;
+}
+
+// if (incomingValue === undefined || incomingValue === null) {
+//   value = defaultValue;
+// } else {
+//   value = incomingValue;
+// }
+
+console.log(value);

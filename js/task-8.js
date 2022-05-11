@@ -28,7 +28,7 @@
 
 // Number(a);
 
-// const b = a;
+// const b = +a;
 
 // console.log(typeof a);
 // console.log(a);
