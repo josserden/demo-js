@@ -4,4 +4,18 @@
  */
 
 const a = 200;
-const b = 150;
+const b = 200;
+
+if (a > 100 && b > 100) {
+  console.log(Math.max(a, b));
+
+  // console.log(a > b ? a : b);
+
+  // if (a > b) {
+  //   console.log(a);
+  // } else {
+  //   console.log(b);
+  // }
+} else {
+  console.log(b + 512);
+}

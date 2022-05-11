@@ -4,3 +4,15 @@
  */
 
 let link = 'https://my-site.com/about';
+
+if (!link.endsWith('/')) {
+  console.log(link + '/');
+} else {
+  console.log(link);
+}
+
+// if (link.endsWith('/')) {
+//   console.log(link);
+// } else {
+//   console.log(link + '/');
+// }

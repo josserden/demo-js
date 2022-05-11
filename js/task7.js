@@ -7,3 +7,20 @@
 * Якщо до дедлайну 2 дні - виведи рядок "Післязавтра"
 * Якщо до дедлайну 3+ днів - виведи рядок "Дата в майбутньому"
  */
+
+const days = 4;
+let message;
+
+if (days === 0) {
+  message = 'Cьогодні';
+} else if (days === 1) {
+  message = 'Завтра';
+} else if (days === 2) {
+  message = 'Післязавтра';
+} else if (days >= 3) {
+  message = 'Дата в майбутньому';
+} else {
+  message = 'Провтикали дедлайн';
+}
+
+console.log(message);

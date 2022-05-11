@@ -12,3 +12,21 @@
 * Якщо введено пароль "Я адмін", то вивести рядок "Вітаю!!"
 * Інакше виводити рядок "Невірний пароль"
 */
+
+// const USER_LOGIN = 'Адмін';
+// const USER_PASSWORD = 'Я адмін';
+
+// let inputLogin = prompt('Введіть свій логін');
+
+// if (inputLogin === USER_LOGIN) {
+//   let inputPassword = prompt('Введіть свій пароль');
+
+//   const result =
+//     inputPassword === USER_PASSWORD ? 'Вітаю!!' : 'Невірний пароль';
+
+//   console.log(result);
+// } else if (inputLogin === null || inputLogin === '') {
+//   console.log('Скасовано');
+// } else {
+//   console.log('Я вас не знаю');
+// }
