@@ -1,1 +1,1 @@
-# JS Demo Course
+# Blended 1
