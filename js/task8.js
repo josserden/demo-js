@@ -9,4 +9,12 @@
 const income = 10000;
 let result = 0;
 
+if (income <= 1000) {
+  result = income * 0.02;
+} else if (income > 1000 && income <= 10000) {
+  result = income * 0.03;
+} else if (income > 10000) {
+  result = income * 0.05;
+}
+
 console.log(result);

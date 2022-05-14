@@ -6,4 +6,12 @@
 const string = 'Я бачив у місті такого ж представника, як ти!';
 let result;
 
+if (string.endsWith('!')) {
+  result = 'Це окличне речення';
+} else if (string.endsWith('?')) {
+  result = 'Це питальне речення';
+} else {
+  result = 'Це розповідне речення';
+}
+
 console.log(result);
