@@ -5,3 +5,9 @@
 
 const string =
   'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptas cupiditate excepturi,';
+const array = string.split(' ');
+
+array.shift();
+array.pop();
+
+console.log(array.join(' '));
