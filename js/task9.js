@@ -10,11 +10,32 @@
 
 const courses = ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL'];
 
-function addCourse(course) {}
+function addCourse(course) {
+  if (courses.includes(course)) {
+    console.warn(`${course} курс вже є!`);
+    return;
+  }
 
-function removeCourse(course) {}
+  courses.push(course);
+}
 
-function updateCourse(oldName, newName) {}
+function removeCourse(course) {
+  if (!courses.includes(course)) {
+    console.warn(`Курс ${course} не знайдено!`);
+    return;
+  }
+
+  courses.splice(courses.indexOf(course), 1);
+}
+
+function updateCourse(oldName, newName) {
+  if (!courses.includes(oldName)) {
+    console.warn(`Курс ${oldName} не знайдено!`);
+    return;
+  }
+
+  courses.splice(courses.indexOf(oldName), 1, newName);
+}
 
 addCourse('Express');
 // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
