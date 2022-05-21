@@ -7,4 +7,4 @@ function a(value) {
 }
 
 const b = a('4') + a('-4') + a('-4') + a(4);
-// console.log(b);
+console.log(b);

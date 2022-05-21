@@ -31,11 +31,28 @@
 
 const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 
-function isLoginValid(login) {}
+const isLoginValid = function (login) {
+  if (login.length >= 4 && login.length <= 16) {
+    return true;
+  }
 
-function isLoginUnique(allLogins, login) {}
+  return false;
+};
 
-function addLogin(allLogins, login) {}
+function isLoginUnique(allLogins, login) {
+  return !allLogins.includes(login);
+}
+
+function addLogin(allLogins, login) {
+  if (isLoginValid(login) && isLoginUnique(allLogins, login)) {
+    allLogins.push(login);
+    console.log('Логін успішно доданий!');
+  } else if (!isLoginUnique(allLogins, login)) {
+    console.log('Такий логін вже використовується! ');
+  } else {
+    console.log('Помилка! Логін має бути від 4 до 16 символів');
+  }
+}
 
 addLogin(logins, 'Ajax');
 addLogin(logins, 'robotGoogles');
